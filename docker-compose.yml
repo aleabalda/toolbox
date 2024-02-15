@@ -14,10 +14,10 @@ services:
     command: ["/bin/zsh"]
     volumes:
       - type: bind
-        source: /path/to/local/.gitconfig
+        source: /c/Users/Alessandro/.gitconfig
         target: /home/ubuntu/.gitconfig
       - type: bind
-        source: /path/to/local/.ssh
+        source: /c/Users/Alessandro/.ssh
         target: /home/ubuntu/.ssh
       - type: bind
         source: ./  # This assumes docker-compose is run from the project directory
